@@ -40,13 +40,44 @@ Se nos fue entregado un conjunto de 58 archivos, que comprenden 24 tablas junto 
 El objetivo primordial de nuestro proyecto es desarrollar un modelo de recomendación que permita a los usuarios encontrar los productos de su preferencia, al mismo tiempo que contribuye al aumento de las ventas en Amazon. Sin embargo, es crucial tener en cuenta que la efectividad de este modelo está estrechamente vinculada a la calidad de los productos ofrecidos. A pesar de que podemos recomendar productos con altas calificaciones de calidad, no podemos prever imprevistos que puedan surgir en cualquier momento, como problemas con el proveedor o cambios en la calidad de los productos ofrecidos. La atención constante a estos factores es esencial para garantizar la satisfacción continua de los clientes y mantener la integridad del sistema de recomendación.
 
 ## Análisis de los datos 
-Durante el análisis exhaustivo de los conjuntos de datos seleccionados, fue necesario investigar la distribución de las calificaciones de los productos en Amazon. Además, identificamos los meses con mayor potencial para las compras en el sitio web. También exploramos la relación entre la calificación de los productos y sus precios, así como la variación de precios en diferentes categorías. Es importante señalar que, debido a la cantidad de datos disponibles, optamos por analizar una muestra representativa de cinco categorías de productos para cada análisis.
+Durante el análisis exhaustivo de los conjuntos de datos seleccionados, fue necesario investigar la distribución de las calificaciones de los productos en Amazon. Además, identificamos los meses con mayor potencial para las compras en el sitio web. También exploramos la relación entre la calificación de los productos y sus precios, así como la cantidad de compras en diferentes rangos de precio. Es importante señalar que, debido a la cantidad de datos disponibles, optamos por analizar una muestra representativa de cinco categorías de productos para cada análisis.
 
 Para profundizar en lo mencionado anteriormente, examinemos la distribución de calificaciones por categoría (recordando que esto se hizo con una muestra de 5 categorías). Se observa que la gran mayoría de los productos vendidos en Amazon tienen una calificación de 5 estrellas. No obstante, es importante señalar que también existe un número significativo de calificaciones de 4 estrellas o menos.
 
 La baja calificación de los productos puede deberse a varios factores, como la calidad del producto, problemas en el proceso de envío, discrepancias en tamaño o color, entre otros aspectos. Por esta razón, nuestro trabajo al desarrollar el sistema de recomendación es mitigar estos riesgos al seleccionar los productos recomendados.
 
-![Image text](https://github.com/leidy7hernandez/Siniestros-Viales/blob/d48e2d3ae80a5e504060f7fec08bcde26afc252e/Imagenes/Tasa%20anual%20de%20Homicidios%20Viales.png)
+![Image text](https://github.com/leidy7hernandez/Amazon-Reviews/blob/main/Imagenes/Distribuci%C3%B3n%20de%20Calificaciones%20por%20Categor%C3%ADa.png)
+
+Queremos incrementar nuestras ventas en Amazon, por lo que resulta valioso entender en qué temporadas del año podemos aprovechar al máximo el sistema de recomendación que estamos desarrollando. El siguiente gráfico revela que los meses de Enero y Diciembre son los períodos en los que se realizan más compras en cada tipo de producto. Es importante señalar que esta conclusión se basa en la suposición de que el número de reseñas es equivalente al número de compras. Partimos de la premisa de que si un cliente deja una reseña, es porque ya ha adquirido el producto. Por esta razón, en el gráfico se muestra la cantidad de reviewerID (identificaciones de reseñas) en lugar de la cantidad de IDs de productos vendidos.
+
+![Image text](https://github.com/leidy7hernandez/Amazon-Reviews/blob/main/Imagenes/Cantidad%20de%20reviews%20por%20mes.png)
+
+Queremos que nuestro modelo de recomendación no solo aumente las ventas, sino también la satisfacción de los clientes. Para lograrlo, es crucial analizar cómo la calificación de los productos se comporta en relación con un factor que Amazon pueda controlar. Dado que tanto la calidad de los productos como las expectativas de los clientes están fuera de nuestro control, decidimos examinar la relación entre la calificación de los productos y su precio en la plataforma.
+
+El siguiente gráfico muestra una tendencia interesante: los clientes tienden a otorgar una calificación de 5 estrellas a productos de bajo precio. Esto podría deberse a que sus expectativas eran moderadas debido al precio reducido, y al recibir el producto sin ninguna decepción, otorgan una calificación alta. Esta tendencia es algo que podemos aprovechar en nuestro modelo de recomendación.
+
+![Image text](https://github.com/leidy7hernandez/Amazon-Reviews/blob/main/Imagenes/Gr%C3%A1fico%20de%20Dispersi%C3%B3n%20Price%20vs.%20Overall.png)v
+
+Además, el gráfico también revela que no solo obtenemos una calificación de producto mejor a un precio más bajo, sino que también hay un aumento significativo en las ventas a precios más bajos. Dado que el modelo de negocio de Amazon implica obtener un porcentaje de cada venta en lugar de quedarse con el monto total, resulta mucho más beneficioso tener un gran volumen de ventas de productos asequibles en lugar de unas pocas ventas de productos costosos.
+
+![Image text](https://github.com/leidy7hernandez/Amazon-Reviews/blob/main/Imagenes/Ventas%20en%20Relaci%C3%B3n%20al%20Precio%20por%20Rango.png)
+
+## KPI's Planteados:
+
+Basándonos en el análisis previamente presentado, hemos formulado KPIs estratégicos que pueden potenciar la posición de Amazon en el mercado, sin comprometer la satisfacción de nuestros clientes.
+
+* Aumentar un 10% las ventas de productos con alta calificación pero bajo volumen de ventas: Esta estrategia se basa en la premisa de que los productos con muchas calificaciones positivas tienen un gran potencial de ventas. Al enfocarnos en estos artículos, esperamos aumentar nuestras ventas rápidamente.
+
+* Incrementar las ventas de productos con bajo rendimiento, actualmente representando menos del 10% del total de ventas, para impulsar el crecimiento en el próximo semestre: Algunos productos no alcanzan su máximo potencial debido a limitaciones en su visibilidad. Al eliminar estas barreras, podemos hacer que estos productos sean más competitivos y, por ende, impulsar las ventas.
+
+* Lograr un crecimiento del 15% en las ventas o recaudación de la categoría de menor rendimiento para el próximo año: Creemos firmemente en el potencial de todas las categorías de productos. Nuestra estrategia se centra en equilibrar las ventas y el interés del cliente en todas las categorías, evitando que alguna quede rezagada en nuestra plataforma de Amazon.
+
+* Incrementar el volumen de ventas en un 3% mensual para los productos de bajo precio: Los productos con precios más bajos tienden a recibir mejores calificaciones. Aprovechamos esta tendencia para aumentar las ventas de estos artículos, beneficiándonos de su mayor satisfacción del cliente.
+
+* Mejorar la satisfacción del cliente en cada categoría en un 10% anual: El objetivo principal es  convertir a Amazon en la principal plataforma mundial de compras. Para lograrlo, es esencial mantener altos niveles de satisfacción del cliente en todas las categorías. Evitar la concentración de la satisfacción en áreas específicas garantizará una amplia oferta de productos y una experiencia de compra positiva en todas las secciones de nuestro sitio, manteniendo nuestra competitividad a largo plazo.
+
+## Conclusiones:
+En resumen, nuestro objetivo es desarrollar un sistema de recomendación que beneficie tanto a Amazon como a sus clientes. La meta es mejorar las recomendaciones de productos de manera tan efectiva que se minimice la posibilidad de recibir calificaciones negativas. Creemos firmemente que al aumentar la satisfacción de los clientes, las ventas se incrementarán de forma significativa. Para alcanzar esta meta, aprovecharemos la tendencia de los clientes a comprar y calificar positivamente productos de menor valor. Además, daremos prioridad a los productos que ya cuentan con excelentes calificaciones, incorporándolos estratégicamente en nuestro sistema de recomendación. Estamos convencidos de que estas estrategias nos permitirán lograr un impacto positivo tanto en la experiencia del cliente como en el crecimiento de las ventas de Amazon.
 
 ## Equipo Responsable:
 Analista de Datos: Paul Andre Jauregui Arbieto
