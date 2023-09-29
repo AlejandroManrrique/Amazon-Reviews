@@ -81,5 +81,7 @@ En resumen, nuestro objetivo es desarrollar un sistema de recomendación que ben
 
 ## Equipo Responsable:
 Analista de Datos: Paul Andre Jauregui Arbieto
+
 Científicos de Datos: Alejandro Fabian Manrrique, Leidy Fernanda Hernandez Navarrete
+
 Ingenieros de Datos: Lautaro Ismael Paniagua, Marcelo Luis Alberto Peralta
