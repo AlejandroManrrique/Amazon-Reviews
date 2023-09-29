@@ -80,8 +80,6 @@ Basándonos en el análisis previamente presentado, hemos formulado KPIs estrat�
 En resumen, nuestro objetivo es desarrollar un sistema de recomendación que beneficie tanto a Amazon como a sus clientes. La meta es mejorar las recomendaciones de productos de manera tan efectiva que se minimice la posibilidad de recibir calificaciones negativas. Creemos firmemente que al aumentar la satisfacción de los clientes, las ventas se incrementarán de forma significativa. Para alcanzar esta meta, aprovecharemos la tendencia de los clientes a comprar y calificar positivamente productos de menor valor. Además, daremos prioridad a los productos que ya cuentan con excelentes calificaciones, incorporándolos estratégicamente en nuestro sistema de recomendación. Estamos convencidos de que estas estrategias nos permitirán lograr un impacto positivo tanto en la experiencia del cliente como en el crecimiento de las ventas de Amazon.
 
 ## Equipo Responsable:
-Analista de Datos: Paul Andre Jauregui Arbieto
-
-Científicos de Datos: Alejandro Fabian Manrrique, Leidy Fernanda Hernandez Navarrete
-
-Ingenieros de Datos: Lautaro Ismael Paniagua, Marcelo Luis Alberto Peralta
+* Analista de Datos: Paul Andre Jauregui Arbieto
+* Científicos de Datos: Alejandro Fabian Manrrique, Leidy Fernanda Hernandez Navarrete
+* Ingenieros de Datos: Lautaro Ismael Paniagua, Marcelo Luis Alberto Peralta
