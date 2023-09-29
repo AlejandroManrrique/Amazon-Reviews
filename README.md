@@ -28,12 +28,11 @@ Se nos fue entregado un conjunto de 58 archivos, que comprenden 24 tablas junto 
 
 ## Recursos Tecnológicos:
 
-* Lenguajes de Programación: Utilizamos Python y R para el análisis de datos y la implementación de algoritmos de machine learning.
-
+* Lenguajes de Programación: Utilizamos Python para el análisis de datos y la implementación de algoritmos de machine learning.
 * Herramientas de Visualización: Empleamos bibliotecas como Matplotlib y Seaborn para visualizar los datos y los resultados del modelo.
-
+* Google Cloud: Empleamos Google Cloud para el almacenamiento de datos y la ejecución de consultas en BigQuery, lo que nos permite acceder y procesar grandes conjuntos de datos de manera eficiente.
+* Google Kubernetes Engine (GKE): Utilizamos Google Kubernetes Engine para gestionar el entorno de desarrollo y la ejecución de nuestros modelos de manera eficiente, aprovechando las capacidades de la capa gratuita de servicio de Google Cloud.
 * Frameworks de Machine Learning: Implementaremos nuestro modelo utilizando bibliotecas como TensorFlow y Scikit-Learn para el entrenamiento y la evaluación del modelo.
-
 * Bases de Datos: Implementaremos tanto bases de datos relacionales como no relacionales para almacenar y acceder a grandes volúmenes de datos históricos de clientes. Además, vamos a incorporar técnicas de carga incremental para gestionar eficientemente nuestros recursos y optimizar el rendimiento del sistema.
 
 ## Restricciones y Consideraciones:
