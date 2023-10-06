@@ -62,6 +62,6 @@ def obtener_recomendaciones(producto_id : str):
         vecinos_filtrados.index = vecinos_filtrados.index + 1
 
         for i in range(len(vecinos_filtrados)):
-            return vecinos_filtrados['product']
+            return vecinos_filtrados
     else:
         return "Producto no encontrado en el conjunto de datos."
