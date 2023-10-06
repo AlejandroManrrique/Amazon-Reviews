@@ -6,7 +6,7 @@ import re
 app = FastAPI()
 
 # Para leer el archivo parquet
-categories = pd.read_parquet('API\\categories.parquet')
+categories = pd.read_parquet('API/categories.parquet')
 
 @app.get("/")
 def welcome():
