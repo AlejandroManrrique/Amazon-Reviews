@@ -18,7 +18,7 @@ archivos_por_categoria = {}
 
 for categoria in categorias:
     nombre_archivo = categoria + "_data.parquet"
-    archivo = pd.read_parquet(nombre_archivo)
+    archivo = pd.read_parquet(f'API/{nombre_archivo}')
     encoded = pd.get_dummies(archivo, columns=['category'])
     features = encoded.drop(['asin', 'overall', 'product'], axis=1)
     scaler = MinMaxScaler()
